@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    img, canvas {
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+  <p><button><label for="file" style="cursor: pointer;">Upload Image</label></button></p>
+  <img id="input-image" width="45%" height="45%"/>
+  <canvas id="wave-anim"></canvas>
+  <canvas id="wave-picture"></canvas>
+  <script src="microcan.window.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
